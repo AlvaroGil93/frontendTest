@@ -1,0 +1,10 @@
+<h1>Lista de usuarios:</h1>
+
+<div class="user-list" *ngFor="let user of allUsers">
+    <div class="user-list-item">
+        <p><span>Username:</span> {{user.username}}</p>
+        <p><span>ID:</span> {{user._id}}</p>
+        <p><span>User Role:</span> {{user.role}}</p>
+
+    </div>
+</div>

@@ -1,0 +1,116 @@
+<app-nav-bar></app-nav-bar>
+<section class="banner-section">
+    <h1>Iron Horse</h1>
+    <p>Más que una moto, un estilo de vida. Encuentra tu compañera perfecta y vive experiencias inolvidables sobre el asfalto.</p>
+    <a routerLink="/login">¡A RODAR!</a>
+  </section>
+<main>
+  <!-- Section for Cards -->
+  <section id="cards-section" class="py-6">
+    <div class="container">
+      <!-- Título H1 alineado a la izquierda -->
+      <h1 class="text-start mb-2">
+        <span class="word-1">Articulos</span>
+        <span class="word-2">recientes</span>
+      </h1>
+      <!-- Párrafo alineado a la izquierda -->
+      <p class="text-start">Explora nuestras aventuras</p>
+
+      <app-article-card></app-article-card>
+    </div>
+  </section>
+  <section class="rodadas-container">
+    <h2 class="eventos">Próximos eventos y rodadas</h2>
+    <section class="cards-section">
+      <article class="rodada-card-container">
+        <img
+          src="./assets/Imagen-marcas-triumph-home-grupo-uma-v3.jpg"
+          alt=""
+        />
+        <div class="text-container">
+          <p class="card-title">Andes en Moto: Una Aventura Sobre Dos Ruedas</p>
+          <p class="card-paragraph">
+            Embárcate en un viaje épico por la Cordillera de los Andes
+            colombianos. Desde los páramos nevados hasta los cálidos valles,
+            nuestras rutas te llevarán a través de paisajes impresionantes,
+            pueblos pintorescos y carreteras sinuosas que pondrán a prueba tus
+            habilidades como motociclista.
+          </p>
+          <a href="https://www.youtube.com/watch?v=hFJ250jgQwM" target="_blank"
+            >Ver Rodada</a
+          >
+        </div>
+      </article>
+
+      <article class="rodada-card-container">
+        <img src="./assets/blog.png" alt="" />
+        <div class="text-container">
+          <p class="card-title">
+            Costa Caribe: Sol, Playa y Rodadas Ilimitadas
+          </p>
+          <p class="card-paragraph">
+            Descubre las joyas ocultas de la costa caribeña colombiana.
+            Rodaremos por carreteras costeras, exploraremos pueblos pesqueros, y
+            nos sumergiremos en la cultura caribeña. ¡Prepárate para disfrutar
+            de playas paradisiacas, aguas cristalinas y una brisa marina
+            refrescante!
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=hFJ250jgQwM"
+            target="_blank"
+            y
+            >Ver Rodada</a
+          >
+        </div>
+      </article>
+
+      <article class="rodada-card-container">
+        <img
+          src="./assets/Los-grandes-cambios-en-la-mecánica-de-motos.jpg"
+          alt=""
+        />
+        <div class="text-container">
+          <p class="card-title">Amazonía Colombiana: Una Aventura Salvaje</p>
+          <p class="card-paragraph">
+            Adéntrate en la selva amazónica y vive una experiencia única en
+            moto. Atravesaremos ríos caudalosos, exploraremos senderos en la
+            jungla y nos conectaremos con la naturaleza en su estado más puro.
+            ¡Una aventura inolvidable para los amantes de la adrenalina y la
+            vida salvaje!
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=hFJ250jgQwM"
+            target="_blank"
+            y
+            >Ver Rodada</a
+          >
+        </div>
+      </article>
+
+      <article class="rodada-card-container">
+        <img src="./assets/MOTO_CASCO_DE_ENDURO_1024x1024.webp" alt="" />
+        <div class="text-container">
+          <p class="card-title">
+            Cañones del Chicamocha: Un Viaje al Corazón de Colombia
+          </p>
+          <p class="card-paragraph">
+            Desciende por los impresionantes cañones del Chicamocha, uno de los
+            más grandes del mundo. Disfruta de vistas panorámicas, recorre
+            carreteras sinuosas y visita pueblos tradicionales. ¡Una aventura
+            que te dejará sin aliento!
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=hFJ250jgQwM"
+            target="_blank"
+            y
+            >Ver Rodada</a
+          >
+        </div>
+      </article>
+    </section>
+  </section>
+</main>
+<!-- <app-article-card></app-article-card> -->
+
+<!-- este es el footer -->
+<app-footer></app-footer>

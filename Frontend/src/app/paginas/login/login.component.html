@@ -1,0 +1,67 @@
+<app-nav-bar></app-nav-bar>
+<section class="login-container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Iniciar sesión</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Registrarse</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <!-- Login Form -->
+    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+      <h2>Iniciar sesión</h2>
+      <form [formGroup]="formularioLogin" (ngSubmit)="handleLoginSubmit()">
+        <div class="mb-3">
+          <label for="loginEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="loginEmail" formControlName="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Toda tu información está protegida</div>
+        </div>
+        <div class="mb-3">
+          <label for="loginPassword" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="loginPassword" formControlName="password">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="loginCheck">
+          <label class="form-check-label" for="loginCheck">Recuerdame</label>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="formularioLogin.invalid">Iniciar sesión</button>
+      </form>
+    </div>
+    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+      <h2>Regístrate</h2>
+      <form [formGroup]="formularioRegistro" (ngSubmit)="handleRegisterSubmit()">
+        <div class="mb-3">
+          <label for="registerName" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="registerName" formControlName="username">
+          <div *ngIf="formularioRegistro.get('username')?.invalid && formularioRegistro.get('username')?.touched" class="text-danger">
+            El nombre es requerido.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="registerEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="registerEmail" formControlName="email" aria-describedby="emailHelp">
+          <div *ngIf="formularioRegistro.get('email')?.invalid && formularioRegistro.get('email')?.touched" class="text-danger">
+            Ingresa un correo electrónico válido.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="registerPassword" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="registerPassword" formControlName="password">
+          <div *ngIf="formularioRegistro.get('password')?.invalid && formularioRegistro.get('password')?.touched" class="text-danger">
+            La contraseña es requerida y debe tener al menos 6 caracteres.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+          <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+          <div *ngIf="formularioRegistro.hasError('mismatch') && formularioRegistro.get('confirmPassword')?.touched" class="text-danger">
+            Las contraseñas no coinciden.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="formularioRegistro.invalid">Registrarse</button>
+      </form>
+    </div>
+    

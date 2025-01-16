@@ -1,0 +1,40 @@
+<!-- articleCard -->
+<!-- <div class="col-md-4 mb-4">
+  <div class="card">
+    <img
+      src="./assets/MOTO_CASCO_DE_ENDURO_1024x1024.webp"
+      class="card-img-top"
+      alt="Image 1"
+    />
+    <div class="card-body">
+      <h5 class="card-title">CONSEJOS PARA ANDAR EN MOTO EN FORMA SEGURA</h5>
+      <p class="card-text">
+        Movilizarte sobre dos ruedas es una de las formas más prácticas para
+        ayudarte a salir del tráfico vehicular en la ciudad.
+      </p>
+      <a href="./pages/blog.html" class="btn btn-primary mt-auto">Ver más</a>
+    </div>
+  </div>
+</div> -->
+
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let post of allPosts">
+        <div class="card h-100">
+          <img src={{post.image_url}} class="card-img-top" alt="Image 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{post.title}}</h5>
+            <p class="card-text">{{post.description}}</p>
+            <p class="card-text"><strong>Categoría:</strong> {{post.category}}</p>
+            <p class="card-text"><strong>Publicado el:</strong> {{post.createdAt}}</p>
+            <p class="card-text"><strong>Autor:</strong> {{post.author}}</p>
+            <div class="button-container">
+                <a class="btn btn-primary mt-auto" (click)="goToDetailView(post._id)">Editar</a>
+                <a class="btn btn-danger mt-auto" (click)="deletePostById(post._id)">Eliminar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

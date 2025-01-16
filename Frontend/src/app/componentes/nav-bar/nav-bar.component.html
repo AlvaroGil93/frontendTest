@@ -1,0 +1,47 @@
+<header *ngIf="isHomePage">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div class="container-logo">
+          <p>Iron Horse</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Emprende una nueva aventura</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/blog-page">Blog</a>
+            </li>
+            <!-- Display 'Iniciar Sesión' only if not logged in -->
+            <li *ngIf="!isLogged" class="nav-item">
+              <a class="nav-link" routerLink="/login">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/sobre-nosotros">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/admin">Admin Dashboard</a>
+            </li>
+            <!-- Show 'Cerrar sesión' only if logged in -->
+            <li *ngIf="isLogged" class="nav-item">
+              <button class="btn btn-info" (click)="cerrarSesion()">Cierre de sesión</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

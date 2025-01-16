@@ -1,0 +1,33 @@
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+}
+
+.user-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #575757;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.user-list-item p{
+    color: #575757;
+    font-weight: 600;
+}
+
+.user-list-item span{
+    font-weight: 400;
+}
+
+.user-list-item:hover{
+    background-color: #d6d6d6;
+    
+}

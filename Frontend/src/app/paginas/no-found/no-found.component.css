@@ -1,0 +1,23 @@
+main{
+    min-height: 100vh;
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+   
+}
+section{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.imagen {
+    min-width: 200px;
+    max-width: 600px;
+    margin: 10px;
+    
+
+}
+

@@ -1,0 +1,167 @@
+<!-- <app-nav-bar></app-nav-bar> -->
+
+
+<header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">BIKERLOG</a> -->
+          <a class="navbar-brand" href="#">
+            <div class="container-logo">
+              <p>Iron Horse</p>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Emprende una nueva aventura</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" routerLink='/'>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink='/blog-page'>Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/login">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/sobre-nosotros">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/admin">Admin Dashboard</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li> -->
+              </ul>
+              <!-- <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form> -->
+            </div>
+          </div>
+        </div>
+    </nav>
+
+      <section class="content-section">
+        <div class="text-content">
+            <nav>
+                  <a routerLink="/">Home</a>
+                  <p> / Articulos</p>
+              </nav>
+            <h1>{{publicacion.title}}</h1>
+            <p>Escrito por: {{publicacion.author}}</p>
+        </div>
+        <div class="image-content">
+            <img src={{publicacion.image_url}} alt="foto de articulo">
+        </div>
+    </section>
+</header>
+
+<!-- Section for article -->
+<section class="fondo">
+    <br>
+    <div class="articulos" [innerHTML]="html_content">
+
+        <!-- <h1 class="tiulo">Manejar en <span class="word">forma </span>segura</h1>
+
+        <p class="texto">¿Estás listo para salir de viaje con tu motocicleta y algunos amigos? Andar en motocicleta con
+            un grupo es diferente a hacerlo solo. Más motocicletas pueden significar más preocupaciones de seguridad.
+            Sin embargo, si tú y tus amigos toman las precauciones adecuadas, andar en motocicleta en grupo puede ser
+            muy divertido. Para prepararte para tu próximo viaje, te presentamos siete consejos de seguridad para andar
+            en motocicleta en grupo.
+        </p>
+        <br>
+        <p>Antes de salir a andar en motocicleta en grupo, haz que un mecánico revise tu motocicleta para asegurarte de
+            que puede hacer el viaje. Realizar cualquier mantenimiento que necesite semanas antes del viaje para
+            garantizar que tienes mucho tiempo para hacer las reparaciones y probarlas. Antes de salir, verifica —o haz
+            que un mecánico verifique— lo siguiente para asegurarte de que los componentes de tu motocicleta funcionen
+            bien:
+        </p>
+
+        <ul>
+            <li>Frenos</li>
+            <li>Bujías</li>
+            <li>Líquidos y aceite</li>
+            <li>Cable del acelerador</li>
+            <li>Filtro de aire del motor</li>
+            <li>Conexiones de la batería</li>
+            <li>Luces y luces intermitentes</li>
+            <li>Presión y banda de rodadura de los neumáticos</li>
+            <li>Tuercas y tornillos que necesitan ajustarse</li>
+        </ul>
+
+        <br>
+        <div class="container">
+            <div class="imagen-articulo">
+                <img src="../assets/Los-grandes-cambios-en-la-mecánica-de-motos.jpg" alt="moto-articulo">
+            </div>
+            <div class="contenido">
+                <h2 class="subtitulo">Tener un<span class="word"> plan </span> de ruta</h2>
+                <p class="texto">
+                    Determinar la ruta de antemano garantiza que el grupo esté de acuerdo y tenga una mejor idea sobre
+                    qué esperar en la ruta. Antes de salir, decidan: </p>
+                <ul>
+                    <li>Los puntos de encuentro</li>
+                    <li>El destino</li>
+                    <li>La ruta con direcciones detalladas</li>
+                    <li>Las paradas planificadas para descansar y cargar combustible</li>
+                </ul>
+               
+            </div>
+            <div class="btn-save">
+                <button class="save">Guardar</button>
+            </div>
+        </div> -->
+
+    </div>
+</section>
+<br>
+<br>
+
+<!-- Section for Cards -->
+<section id="fondoBlanco" class="py-6">
+    <div class="rating-section text-center mt-5">
+        <h3>Califica este blog</h3>
+        <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <p id="rating-message"></p>
+    </div>
+    <div class="card">
+        <!-- Título H1 alineado a la izquierda -->
+        <h1 class="text-start mb-2">
+            <span class="word-1">Articulos</span>
+            <span class="word-2">recientes</span>
+        </h1>
+        <!-- Párrafo alineado a la izquierda -->
+        <p class="text-start">Explora nuestras aventuras</p>
+
+       <app-article-card></app-article-card>
+    </div>
+</section>
+<app-footer></app-footer>

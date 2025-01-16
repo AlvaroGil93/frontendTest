@@ -1,0 +1,111 @@
+<header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">BIKERLOG</a> -->
+          <a class="navbar-brand" href="#">
+            <div class="container-logo">
+              <p>Iron Horse</p>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Emprende una nueva aventura</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link"  routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/blog-page">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/login">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/sobre-nosotros">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/admin">Admin Dashboard</a>
+                </li>
+        
+              </ul>
+            
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<section class="py-5 d-flex justify-content-center ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Quiénes Somos</h2>
+                <p class="lead">
+                    Iron Horse es una comunidad apasionada por el mundo de las motos y la aventura. Nos dedicamos a conectar a los motociclistas de todo el mundo, ofreciendo una plataforma para compartir experiencias, rutas y la pasión por rodar. 
+                </p>
+                <p class="lead ">
+                    Nuestra misión es inspirar y apoyar a todos aquellos que sienten el viento en su cara mientras recorren caminos, ya sea que estés planeando tu próxima gran rodada o simplemente buscando consejos y trucos sobre cómo mejorar tu moto.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="video-container">
+                    <video controls autoplay loop muted>
+                        <source src="../assets/Presentación de cultura de la empresa celeste violeta (3).mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de equipo -->
+<section class="py-5 bg-light d-flex justify-content-center ">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestro Equipo</h2>
+        <div class="row text-center">
+            <!-- Miembro del equipo 1 -->
+            <div class="col-md-4 team-member">
+                <img src="/assets/New github image.jpg" alt="Team Member 1">
+                <h5>Jesús Morán</h5>
+                <p>Scrum Master & Developer</p>
+            </div>
+            <!-- Miembro del equipo 2 -->
+            <div class="col-md-4 team-member">
+                <img src="../assets/8C8E439C-3A99-4916-8226-2C6E57E759D5.JPG" alt="Team Member 2">
+                <h5>Alvaro Gil</h5>
+                <p>Developer</p>
+            </div>
+            <!-- Miembro del equipo 3 (nuevo) -->
+            <div class="col-md-4 team-member">
+                <img src="assets/juan-foto.jpg" alt="Team Member 3">
+                <h5>Juan</h5>
+                <p>Developer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de llamada a la acción -->
+<section class="py-5 d-flex justify-content-center ">
+    <div class="container text-center">
+        <h2 class="mb-4">Únete a Nuestra Comunidad</h2>
+        <p class="biker mb-4">
+            Si compartes nuestra pasión por las motos, ¡BIKERLOG es el lugar para ti! Únete a nuestra comunidad y comienza tu próxima gran aventura.
+        </p>
+        <a class="btn btn-primary btn-lg" routerLink="/login">Únete Ahora</a>
+    </div>
+</section>
+
+<app-footer></app-footer>

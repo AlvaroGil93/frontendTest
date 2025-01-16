@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reset para márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #FF9F34;
+    --secondo-color: #0072F0;
+    --third-color: #2A4858;
+    --dark-grey: #272727;
+    --font-text: 'Bebas Neue', sans-serif;
+    --second-font: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    font-family: var(--second-font);
+    overflow-x: hidden;
+}
+
+.container-logo p {
+    font-family: var(--font-text);
+    font-size: 40px;
+}
+
+header {
+    padding-bottom: 100px;
+}

@@ -1,0 +1,202 @@
+/* Sección del banner */
+.banner-section {
+    background-image: url('../../../../public/assets/Bikerlog-image-main.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 80px;
+  
+}
+
+.banner-section h1 {
+    color: white;
+    font-size: 6rem;
+    font-family: var(--font-text);
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.banner-section p {
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 10px 15px;
+}
+
+.banner-section a {
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--color-text);
+    color: #333;
+    text-decoration: none;
+}
+
+
+.banner-section a:hover {
+    border: 2px solid var(--color-text);
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+
+/* Estilos para las palabras individuales en el título */
+.word-1 {
+    color: #333333; /* Cambia el color de 'Articulos' a azul */
+    font-family: "Bebas Neue";
+    margin-right: 6px;
+}
+
+
+.word-2 {
+    color: #0072F0; /* Cambia el color de 'recientes' a rojo */
+    font-family: "Bebas Neue";
+}
+
+/* Asegura que todas las tarjetas tengan la misma altura */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Esto asegura que las tarjetas tengan la misma altura */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen de las tarjetas */
+    object-fit: cover; /* Asegura que la imagen no se distorsione y cubra el área */
+}
+
+/* Asegura que el contenido dentro de las tarjetas se distribuya correctamente */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ocupa toda la altura disponible de la tarjeta */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    flex-grow: 1; /* Hace que el párrafo ocupe el espacio restante */
+}
+
+/* Botón al final */
+.btn {
+    margin-top: auto; /* Asegura que el botón se quede en la parte inferior */
+}
+
+/* Margen y padding consistentes */
+.mb-4 {
+    margin-bottom: 20px;
+}
+
+.py-6 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.card-title {
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Rodadas container */
+.rodadas-container {
+    margin-top: 80px;
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.rodadas-container h2.eventos {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--secondo-color);
+    font-family: var(--font-text);
+}
+
+/* Cards sección */
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/* Tarjetas individuales */
+.rodada-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rodada-card-container img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    padding: 15px;
+    text-align: left;
+    width: 60%;
+}
+
+.text-container .card-title {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+}
+
+.text-container .card-paragraph {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.text-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.text-container button:hover {
+    background-color: #0056b3;
+}
+ /* diseño responsive */
+/*  responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+   .rodada-card-container {
+        flex-direction: column;
+    }
+    .banner-section {
+        padding-left: 40px;
+    }
+}
+ 

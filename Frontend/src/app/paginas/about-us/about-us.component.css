@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root{
+    --color-text: #FF9F34;
+    --secondo-color:#0072F0;
+    --font-text: Bebas Neue;
+    --second-font: 'Lato';
+
+}
+
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+}
+
+main{
+    overflow: hidden;
+}
+
+
+.container-logo p{
+    font-family: "Bebas Neue";
+    font-size: 40px;
+}
+
+.banner-section{
+    background-image: url('/assets/Bikerlog-image-main.png'); /* Imagen de fondo del banner */
+    background-size: cover;
+    border:2px solid red;
+    background-position: center;
+    background-repeat: repeat;
+    height: 600px;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 100px;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner-section h1{
+    color: white;
+    margin-left: 80px;
+    font-size: 150px;
+    font-family: "Bebas Neue";
+    line-height: 140px;
+    margin-bottom: 0;
+    
+}
+.banner-section p {
+    color: white;
+    margin-left: 80px;
+    font-size: 30px;
+    background-color: rgb(50, 50, 50);
+    padding: 6px 10px;
+}
+
+.banner-section button {
+    padding: 6px 40px;
+    border-radius: 10px;
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    margin: 20px 10px 0px 80px;
+    border: none;
+    background-color: #FF9F34;
+    color: #333333;
+    text-decoration: none;
+}
+
+.banner-section button:hover{
+    border: 2px solid #FF9F34;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header{
+    padding-bottom: 100px;
+}
+
+/* Alinear el contenido a la izquierda */
+.banner-content {
+    max-width: 600px; 
+    padding-left: 30px; 
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.banner-content .btn {
+    font-size: 1.25rem;
+    padding: 10px 20px;
+}
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: var(--font-text);
+    font-size: 70px; /* Tamaño por defecto en pantallas grandes */
+}
+/*style for about*/
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: filter 0.5s;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member h5 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-style: italic;
+}
+
+.text-center h2 {
+    color: var(--color-text);
+    font-family: var(--font-text);
+}
+
+/* Ajusta el estilo de la sección */
+.video-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+/*style for section container (quienes somos) */
+.mb-4 {
+    font-family: var(--font-text);
+    color: var(--secondo-color);
+    font-size: 35px;
+}
+
+.lead {
+    font-family: var(--second-font);
+    color: black;
+}
+
+
+
+/*estilos para footer*/
+footer {
+    background-color: rgb(33, 37, 41);
+    color: white; 
+    padding: 20px; 
+    text-align: left; 
+}
+
+footer h4{
+    font-family: var(--font-text);
+}
+
+footer p{
+    font-family: var(--second-font);
+}
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.footer-content div {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px; 
+}
+
+.footer-bottom .social-media a {
+    margin: 0 10px; 
+    color: white; 
+}
+
+.footer-bottom .social-media a:hover {
+    text-decoration: underline; 
+}
+
+/* Responsiveness with media queries */
+
+/* Pantallas grandes y tablets (dispositivos de hasta 992px) */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 60px; /* Ajusta el tamaño del texto */
+    }
+    .banner-section p {
+        font-size: 18px; /* Ajusta el tamaño del párrafo en la sección banner */
+    }
+
+    .tiulo {
+        font-size: 30px;
+    }
+
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+    .lead {
+        font-size: 16px;
+    }
+   
+}
+
+/* Tablets y dispositivos móviles grandes (hasta 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+   
+    .banner-section p {
+        font-size: 16px;
+    }
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+    .lead {
+        font-size: 15px;
+    }
+    .text-center h2 {
+        font-size: 28px;
+    }
+}
+
+/* Móviles medianos (hasta 576px) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+    .banner-section p {
+        font-size: 14px;
+    }
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+    .newsletter {
+        display: none; /* Ocultar el contenedor del boletín */
+    }
+    
+    .titulo,
+    .titulo + p { /* Selecciona el elemento .titulo y su siguiente p */
+        display: none; /* Ocultar el título y el párrafo asociado */
+    }
+    .lead {
+        font-size: 14px;
+    }
+    .text-center h2 {
+        font-size: 24px;
+    }
+    .btn-lg {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Móviles pequeños y extra pequeños (hasta 375px) */
+@media (max-width: 390px) {
+    h1 {
+        display: none;
+    }
+    
+    .tiulo{
+        font-size: 24px;
+    }
+    .banner-section p {
+        font-size: 12px;
+    }
+    .team-member img {
+        width: 70px;
+        height: 70px;
+    }
+    .lead {
+        font-size: 13px;
+    }
+    .text-center h2 {
+        font-size: 20px;
+    }
+    .btn-lg {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,107 @@
+/* body{
+    background-image: url(../assets/2025-kawasaki-ninja-1100sx.webp);
+} */
+/* Estilos generales para el contenedor del formulario */
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos */
+.login-container h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilos para las pestañas (tabs) */
+.nav-tabs {
+    justify-content: center;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-item + .nav-item {
+    margin-left: 10px;
+}
+
+/* Estilos para los formularios */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Estilo de los campos de entrada */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Estilo de los botones */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Estilos para la ayuda de texto */
+.form-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* estilo para la caja de verificación */
+.form-check-label {
+    font-weight: normal;
+}
+
+/* Espaciado de los elementos */
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+/* Agregar un margen superior */
+.py-6 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
